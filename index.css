@@ -1427,7 +1427,7 @@ main .right-main-section{
     content: "";
     position: absolute;
     inset: 0;
-    width: 95%;
+    width: var(--progress);
     border-radius: inherit;
     background:
         linear-gradient(
@@ -1441,26 +1441,6 @@ main .right-main-section{
     animation: progressLoad 1.5s ease forwards;
 }
 
-.progress-div .progress:nth-child(3)::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    width: 95%;
-    border-radius: inherit;
-    background:
-        linear-gradient(
-            90deg,
-            #00F5FF,
-            #7B2EFF
-        );
-    box-shadow:
-        0 0 12px rgba(0,245,255,.5);
-    transform-origin: left;
-    animation: progressLoad3 1.5s ease forwards;
-}
-@keyframes progressLoad3 {
-    to{
-        transform:translateX(75%)
 /* moving shine */
 .progress-div .progress::after {
     content: "";
